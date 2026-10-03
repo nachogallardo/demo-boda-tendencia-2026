@@ -42,7 +42,7 @@
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && menu.classList.contains('open')) { setMenu(false); btn.focus(); }
   });
-  window.matchMedia('(min-width: 1024px)').addEventListener('change', function (m) { if (m.matches) setMenu(false); });
+  window.matchMedia('(min-width: 1200px)').addEventListener('change', function (m) { if (m.matches) setMenu(false); });
 
   /* Enlace activo en la navegación */
   var navLinks = $$('.nav a.navlink');
@@ -65,7 +65,7 @@
     ScrollTrigger.batch('[data-reveal]', {
       start: 'top 92%', once: true,
       onEnter: function (els) {
-        gsap.to(els, { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out', stagger: 0.08, overwrite: true, clearProps: 'transform' });
+        gsap.to(els, { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out', stagger: 0.08, overwrite: true });
       }
     });
     /* Nuestra historia: entrada propia, más elaborada (el único pasaje que la lleva) */
@@ -82,6 +82,13 @@
   }
   if (document.readyState === 'complete' || document.readyState === 'interactive') initReveal();
   else document.addEventListener('DOMContentLoaded', initReveal);
+
+  /* Mapas: el iframe no captura el scroll hasta que se pulsa */
+  $$('.map').forEach(function (m) {
+    m.addEventListener('click', function () { m.classList.add('active'); });
+    m.addEventListener('mouseleave', function () { m.classList.remove('active'); });
+  });
+  document.addEventListener('touchstart', function (e) { $$('.map.active').forEach(function (m) { if (!m.contains(e.target)) m.classList.remove('active'); }); }, { passive: true });
 
   /* ---------- FAQ ---------- */
   $$('.faq-q').forEach(function (q) {
