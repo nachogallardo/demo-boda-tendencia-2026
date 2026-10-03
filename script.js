@@ -23,6 +23,24 @@
   var frame = $('#countdown');
   if (!reduce) setTimeout(function () { frame.classList.add('sweep'); }, 900);
 
+  /* ---------- Scroll más lento y suave (Lenis): rueda al 55%, táctil nativo ---------- */
+  var lenis = null;
+  if (!reduce && window.Lenis) {
+    lenis = new Lenis({ lerp: 0.07, wheelMultiplier: 0.55, smoothWheel: true });
+    (function raf(t) { lenis.raf(t); requestAnimationFrame(raf); })(performance.now());
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href^="#"]');
+      if (!a || a.getAttribute('href').length < 2) return;
+      var el = document.querySelector(a.getAttribute('href'));
+      if (!el) return;
+      e.preventDefault();
+      var hh = document.getElementById('site-header').getBoundingClientRect().height;
+      lenis.scrollTo(el, { offset: -hh, duration: 1.8, easing: function (x) { return 1 - Math.pow(1 - x, 3); } });
+      history.pushState(null, '', a.getAttribute('href'));
+    });
+  }
+  function lockScroll(on) { document.documentElement.style.overflow = on ? 'hidden' : ''; if (lenis) { on ? lenis.stop() : lenis.start(); } }
+
   /* ---------- Header y menú ---------- */
   var header = $('#site-header'), menu = $('#menu'), btn = $('#menu-btn');
   function onScroll() { header.classList.toggle('scrolled', window.scrollY > 24); }
@@ -34,7 +52,7 @@
     header.classList.toggle('menu-open', open);
     btn.setAttribute('aria-expanded', String(open));
     btn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
-    document.documentElement.style.overflow = open ? 'hidden' : '';
+    lockScroll(open);
     if (open) { var f = $('a', menu); if (f) f.focus({ preventScroll: true }); }
   }
   btn.addEventListener('click', function () { setMenu(!menu.classList.contains('open')); });
@@ -110,12 +128,12 @@
   function openLb(i) {
     lastFocus = document.activeElement; show(i);
     lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false');
-    document.documentElement.style.overflow = 'hidden';
+    lockScroll(true);
     $('.lb-close', lb).focus();
   }
   function closeLb() {
     lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true');
-    document.documentElement.style.overflow = '';
+    lockScroll(false);
     if (lastFocus) lastFocus.focus();
   }
   shots.forEach(function (b, i) { b.addEventListener('click', function () { openLb(i); }); b.setAttribute('aria-label', 'Ampliar foto ' + (i + 1) + ' de ' + shots.length); });

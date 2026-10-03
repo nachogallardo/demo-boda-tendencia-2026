@@ -10,7 +10,7 @@
 <meta property="og:locale" content="es_ES">
 <meta property="og:title" content="Valeria & Hugo · 15 de mayo de 2027 · Barcelona">
 <meta property="og:description" content="Nos casamos el sábado 15 de mayo de 2027 en Barcelona. Ceremonia en los Jardines de Pedralbes y celebración en el Palacete Vilanova. #ValeriaYHugo2027">
-<meta property="og:image" content="https://nachogallardosanchez.me/demo-boda-tendencia-2026/img/og.jpg">
+<meta property="og:image" content="https://ngs-dev-studio.github.io/demo-boda-tendencia-2026/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Patio de claustro con arcos de piedra y palmeras al atardecer">
@@ -52,6 +52,9 @@
   @media (min-width: 1200px) { :root { --hh: 84px; } }
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
   body { background: #F6F3EC; color: #1F3328; font-family: "Work Sans", system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.65; font-weight: 400; overflow-x: clip; text-rendering: optimizeLegibility; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+  .lenis.lenis-stopped { overflow: hidden; }
   section[id], footer[id] { scroll-margin-top: var(--hh); }
   ::selection { background: #E3D2BE; color: #1F3328; }
   .on-dark ::selection, .on-dark::selection { background: #8A6652; color: #F6F3EC; }
@@ -750,6 +753,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" defer></script>
 <script src="script.js" defer></script>
 </body>
 </html>
