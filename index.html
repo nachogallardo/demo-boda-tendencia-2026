@@ -136,6 +136,18 @@
   .cue { display: none; }
   @media (min-width: 768px) {
     .hero { display: flex; align-items: center; padding-top: calc(var(--hh) + 32px); padding-bottom: 56px; }
+  @media (max-width: 767px) {
+    .hero { height: 100svh; min-height: 540px; padding-top: calc(var(--hh) + 4px); padding-bottom: 20px; }
+    .hero .hero-grid { height: 100%; grid-template-rows: minmax(0, 1fr) auto; gap: 16px; }
+    .hero-media { width: 100%; max-height: none; aspect-ratio: auto; height: 100%; min-height: 0; margin: 0; }
+    .hero h1 { font-size: min(15vw, 8.6svh); }
+    .hero-date { font-size: clamp(1.05rem, 4.6vw, 1.3rem); }
+    .hero .lede { font-size: 1rem; line-height: 1.5; }
+    .countdown .cd-cell { padding: 12px 4px 10px; }
+    .cd-num { font-size: clamp(1.6rem, 7.5vw, 2.25rem); }
+    .cd-lab { margin-top: 5px; }
+  }
+  @media (max-width: 767px) and (max-height: 720px) { .hero .lede { display: none; } }
     .hero-grid { grid-template-columns: repeat(12, 1fr); gap: 0 24px; align-items: center; width: 100%; }
     .hero h1 { font-size: clamp(3.25rem, 8.4vw, 6rem); }
     .hero-media { grid-column: 7 / 13; grid-row: 1; width: 100%; max-width: 520px; max-height: calc(100svh - var(--hh) - 72px); aspect-ratio: 3 / 4; justify-self: end; margin: 0; }
@@ -404,9 +416,9 @@
     </div>
     <div class="hero-copy">
       <h1 class="display"><span class="l1">Valeria</span><span class="l2"><span class="amp">&amp;</span>Hugo</span></h1>
-      <p class="hero-date mt-6">Sábado 15 de mayo de 2027 · Barcelona</p>
-      <p class="lede mt-4 measure" style="max-width:34ch">Nos casamos. Queremos celebrarlo con la gente que ha hecho que llegar hasta aquí valga la pena.</p>
-      <div class="mt-9 sm:mt-10">
+      <p class="hero-date mt-3 sm:mt-6">Sábado 15 de mayo de 2027 · Barcelona</p>
+      <p class="lede mt-2 sm:mt-4 measure" style="max-width:34ch">Nos casamos. Queremos celebrarlo con la gente que ha hecho que llegar hasta aquí valga la pena.</p>
+      <div class="mt-4 sm:mt-10">
         <div class="countdown tnum" id="countdown" role="timer" aria-label="Tiempo que falta para la boda">
           <div class="cd-cell"><span class="cd-num" data-cd="d">000</span><span class="cd-lab">Días</span></div>
           <div class="cd-cell"><span class="cd-num" data-cd="h">00</span><span class="cd-lab">Horas</span></div>
