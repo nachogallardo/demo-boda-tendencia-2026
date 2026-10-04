@@ -1,141 +1,160 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-03T20:00:00.000Z",
+  "generatedAt": "2026-10-04T12:00:00.000Z",
   "title": "Design System: Valeria & Hugo",
   "extensions": {
     "colorMeta": {
-      "cloud": { "role": "neutral", "displayName": "Cloud Dancer", "canonical": "#F6F3EC", "tonalRamp": ["#2B2A26", "#4A4841", "#6E6B61", "#948F83", "#B9B3A5", "#D6D0C2", "#EAE5D9", "#F6F3EC"] },
-      "cloud-deep": { "role": "neutral", "displayName": "Cloud profundo", "canonical": "#EDE7DA", "tonalRamp": ["#2B281F", "#4C4737", "#726B55", "#988F72", "#BDB394", "#D6CDB5", "#E5DDCB", "#EDE7DA"] },
-      "forest": { "role": "primary", "displayName": "Verde bosque", "canonical": "#1F3328", "tonalRamp": ["#0E1812", "#1F3328", "#2F4A3B", "#46695A", "#678A78", "#93AE9F", "#C0D1C7", "#E6EDE8"] },
-      "forest-soft": { "role": "neutral", "displayName": "Verde suave", "canonical": "#46564C", "tonalRamp": ["#1D241F", "#2E3932", "#46564C", "#5F7266", "#7F9285", "#A3B3A8", "#C8D3CB", "#E7ECE9"] },
-      "mocha": { "role": "secondary", "displayName": "Mocha", "canonical": "#8A6652", "tonalRamp": ["#2E211A", "#4B362A", "#6E4F3D", "#8A6652", "#A8826E", "#C3A18F", "#DBC3B6", "#EFE2DA"] },
-      "mocha-deep": { "role": "secondary", "displayName": "Mocha profundo", "canonical": "#6E4F3D", "tonalRamp": ["#261911", "#3A2A20", "#4F392C", "#6E4F3D", "#8A6652", "#A8826E", "#C9AB9B", "#E8D9D0"] },
-      "champagne": { "role": "tertiary", "displayName": "Champagne", "canonical": "#E3D2BE", "tonalRamp": ["#3B2F20", "#5E4C35", "#85704F", "#A99270", "#C6B08F", "#E3D2BE", "#EFE4D6", "#F8F3EB"] },
-      "silver": { "role": "neutral", "displayName": "Plata", "canonical": "#C3C3C0", "tonalRamp": ["#3A3A38", "#585856", "#777775", "#969694", "#ADADAB", "#C3C3C0", "#DADAD8", "#EEEEED"] },
-      "graphite": { "role": "neutral", "displayName": "Grafito", "canonical": "#4F5551", "tonalRamp": ["#1E211F", "#2F3331", "#4F5551", "#69706B", "#868D88", "#A7ADA9", "#CBCFCC", "#E9EBE9"] },
-      "error-brick": { "role": "neutral", "displayName": "Ladrillo de error", "canonical": "#8B2E22", "tonalRamp": ["#2E0E0A", "#4C1812", "#6D2219", "#8B2E22", "#A9503F", "#C47B6C", "#DDAEA3", "#F1DDD8"] }
+      "cloud": { "role": "neutral", "displayName": "Cloud Dancer", "canonical": "#F7F3EC", "tonalRamp": ["#2B2926", "#4A4640", "#6F6A60", "#958F82", "#BCB5A6", "#D9D2C3", "#EDE7DB", "#F7F3EC"] },
+      "sage": { "role": "neutral", "displayName": "Salvia", "canonical": "#E4E9D9", "tonalRamp": ["#262A21", "#444B38", "#677158", "#8D9879", "#B3BDA0", "#CBD4BA", "#DAE1CC", "#E4E9D9"] },
+      "blush": { "role": "neutral", "displayName": "Blush empolvado", "canonical": "#F3DFD6", "tonalRamp": ["#2E2220", "#523B35", "#7A5A51", "#A38078", "#C9A69B", "#E0C0B5", "#EBD1C7", "#F3DFD6"] },
+      "butter": { "role": "neutral", "displayName": "Mantequilla", "canonical": "#F8EFCF", "tonalRamp": ["#2C2819", "#4E4727", "#77703D", "#A09858", "#C8BF7E", "#E0D7A0", "#EFE5BA", "#F8EFCF"] },
+      "latte": { "role": "neutral", "displayName": "Latte mousse", "canonical": "#E9DCCB", "tonalRamp": ["#2A231B", "#4A3F30", "#6F6048", "#948261", "#B8A586", "#D0C0A6", "#DFD0BA", "#E9DCCB"] },
+      "ink": { "role": "neutral", "displayName": "Tinta espresso", "canonical": "#2E2326", "tonalRamp": ["#171113", "#2E2326", "#4A3B3F", "#665458", "#867478", "#A8979A", "#CDBFC1", "#EAE2E3"] },
+      "ink-soft": { "role": "neutral", "displayName": "Tinta suave", "canonical": "#5E4A47", "tonalRamp": ["#251D1C", "#3E3130", "#5E4A47", "#7A6461", "#977F7B", "#B79F9B", "#D6C4C1", "#EEE5E3"] },
+      "burgundy": { "role": "primary", "displayName": "Burdeos", "canonical": "#7A3446", "tonalRamp": ["#2E131A", "#4C1F2B", "#7A3446", "#99495D", "#B56D7F", "#CD97A4", "#E2C0C8", "#F3E3E7"] },
+      "bronze": { "role": "secondary", "displayName": "Bronce", "canonical": "#7A4E22", "tonalRamp": ["#2D1C0C", "#4C3016", "#7A4E22", "#9A6A38", "#B88B5E", "#D0AE88", "#E4D0B7", "#F4EBDF"] },
+      "wine": { "role": "neutral", "displayName": "Borgoña profundo", "canonical": "#4A2530", "tonalRamp": ["#1E0F13", "#33191F", "#4A2530", "#5A2E3A", "#7A4856", "#9C6E7A", "#C0A0A8", "#E4D4D8"] },
+      "wine-gold": { "role": "tertiary", "displayName": "Oro de borgoña", "canonical": "#E8C48A", "tonalRamp": ["#3A2A10", "#5F4521", "#8D6A36", "#B8904F", "#E8C48A", "#F0D5A9", "#F6E5C8", "#FBF3E4"] },
+      "ember": { "role": "tertiary", "displayName": "Ámbar de chispa", "canonical": "#F0B35E", "tonalRamp": ["#3B2508", "#62400F", "#8F5F1A", "#BE822B", "#F0B35E", "#F5C98A", "#F9DDB0", "#FCEFD8"] },
+      "error": { "role": "neutral", "displayName": "Ladrillo de error", "canonical": "#A12E22", "tonalRamp": ["#2F0E0A", "#561811", "#7D2218", "#A12E22", "#BE5547", "#D4837A", "#E7B4AD", "#F5DEDA"] }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "Nombres de la portada, Bodoni Moda enorme con tracking negativo." },
+      "display": { "displayName": "Display", "purpose": "Nombres del hero, Bodoni 500 opsz 40, dos líneas en móvil." },
       "headline": { "displayName": "Headline", "purpose": "Títulos H2 de sección." },
-      "title": { "displayName": "Title", "purpose": "Títulos de panel, lugar, hito y pregunta del FAQ; fechas y cifras en cursiva o recta." },
+      "title": { "displayName": "Title", "purpose": "Títulos de panel, lugar, hito y pregunta del FAQ." },
+      "numeral": { "displayName": "Numeral", "purpose": "Fechas, años fantasma, hashtag y cuenta atrás en Bodoni cursiva o recta." },
       "body": { "displayName": "Body", "purpose": "Work Sans 17px, medida 66ch." },
-      "label": { "displayName": "Label", "purpose": "Botones, navegación y cue en mayúsculas con tracking amplio." }
+      "label": { "displayName": "Label", "purpose": "Botones, navegación y etiquetas en mayúsculas con tracking amplio." }
     },
     "shadows": [
-      { "name": "none", "value": "none", "purpose": "El sistema es plano: la profundidad es tonal (cloud, cloud-deep, forest, mocha)." },
-      { "name": "axis-dot-ring", "value": "0 0 0 6px #1F3328", "purpose": "Anillo del punto champagne que corta el eje central de Nuestra historia." }
+      { "name": "none", "value": "none", "purpose": "El sistema es plano: la profundidad es tonal (fondo y panel de sección)." },
+      { "name": "axis-dot-ring", "value": "0 0 0 6px #E4E9D9, 0 0 0 7px rgba(122,78,34,.35)", "purpose": "Anillo del punto burdeos que corta el eje central de Nuestra historia." },
+      { "name": "spark-glow", "value": "0 0 5px 2px rgba(232,170,80,.8), 0 0 14px 4px rgba(232,170,80,.35)", "purpose": "Halo ámbar de las chispas titilantes del hero." },
+      { "name": "hero-veil-text", "value": "0 1px 22px rgba(247,243,236,.7)", "purpose": "Halo claro tras los nombres del hero para asentarlos en la foto." }
     ],
     "motion": [
       { "name": "ease-out", "value": "cubic-bezier(.22,.8,.3,1)", "purpose": "Subrayados de navegación, menú, acordeón, zoom de galería." },
       { "name": "state", "value": ".2s ease-out", "purpose": "Hover, foco y pulsación de botones y campos." },
-      { "name": "reveal", "value": "400ms power2.out, 24px", "purpose": "Entrada de contenido por GSAP ScrollTrigger." },
-      { "name": "historia-entrance", "value": "clip-path inset(0 0 100% 0) a 0 en 0.9s power3.out; escala 1.08 a 1 en 1.1s; texto 0.5s con cascada 0.09s", "purpose": "Entrada propia y única de cada hito de Nuestra historia." },
-      { "name": "countdown-sweep", "value": ".95s var(--ease-out)", "purpose": "Barrido plateado único del marco de la cuenta atrás." }
+      { "name": "reveal", "value": "translateY(24px) a 0 con fade (GSAP ScrollTrigger)", "purpose": "Entrada de contenido por sección; desactivada con prefers-reduced-motion." },
+      { "name": "historia-entrance", "value": "clip-path inset(0 0 100% 0) a abierto; escala 1.08 a 1; texto 20px con cascada", "purpose": "Entrada propia de cada hito de Nuestra historia." },
+      { "name": "countdown-sweep", "value": ".95s var(--ease-out)", "purpose": "Barrido de luz ámbar único del marco de la cuenta atrás." },
+      { "name": "twinkle", "value": "opacity .08 a .95, escala .85 a 1.1, alternate infinite", "purpose": "Chispas del hero." }
     ],
     "breakpoints": [
       { "name": "md", "value": "768px" },
-      { "name": "lg", "value": "1024px" }
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1200px" }
     ]
   },
   "components": [
     {
       "name": "Botón sólido",
-      "kind": "custom",
+      "kind": "button",
       "refersTo": "button-solid",
       "description": "Acción principal: Confirmar asistencia, Enviar confirmación.",
       "html": "<a class=\"ds-btn-solid\" href=\"#\">Confirmar asistencia</a>",
-      "css": ".ds-btn-solid { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 1.6rem; background: #1F3328; color: #F6F3EC; border: 1px solid #1F3328; font-family: 'Work Sans', system-ui, sans-serif; font-size: .8125rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color .2s ease-out, border-color .2s ease-out, transform .2s ease-out; } .ds-btn-solid:hover { background: #46564C; border-color: #46564C; } .ds-btn-solid:focus-visible { outline: 2px solid #6E4F3D; outline-offset: 3px; } .ds-btn-solid:active { transform: scale(.97); }"
+      "css": ".ds-btn-solid { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 10px 1.6rem; background: #3A2A2E; color: #F7F3EC; border: 1px solid #3A2A2E; font-family: 'Work Sans', system-ui, sans-serif; font-size: .8125rem; font-weight: 500; letter-spacing: .14em; line-height: 1.3; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color .2s ease-out, border-color .2s ease-out, transform .2s ease-out; } .ds-btn-solid:hover { background: #5A2E3A; border-color: #5A2E3A; } .ds-btn-solid:focus-visible { outline: 2px solid #7A4E22; outline-offset: 3px; } .ds-btn-solid:active { transform: scale(.97); }"
     },
     {
       "name": "Botón de línea",
-      "kind": "custom",
+      "kind": "button",
       "refersTo": "button-line",
       "description": "Acción secundaria: Cómo llegar, Copiar, Enviar otra respuesta.",
       "html": "<a class=\"ds-btn-line\" href=\"#\">Cómo llegar</a>",
-      "css": ".ds-btn-line { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 1.6rem; background: transparent; color: #1F3328; border: 1px solid #1F3328; font-family: 'Work Sans', system-ui, sans-serif; font-size: .8125rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color .2s ease-out, color .2s ease-out; } .ds-btn-line:hover { background: #1F3328; color: #F6F3EC; } .ds-btn-line:focus-visible { outline: 2px solid #6E4F3D; outline-offset: 3px; } .ds-btn-line:active { transform: scale(.97); }"
+      "css": ".ds-btn-line { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 10px 1.6rem; background: transparent; color: #2E2326; border: 1px solid #2E2326; font-family: 'Work Sans', system-ui, sans-serif; font-size: .8125rem; font-weight: 500; letter-spacing: .14em; line-height: 1.3; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color .2s ease-out, color .2s ease-out, transform .2s ease-out; } .ds-btn-line:hover { background: #2E2326; color: #F7F3EC; } .ds-btn-line:focus-visible { outline: 2px solid #7A4E22; outline-offset: 3px; } .ds-btn-line:active { transform: scale(.97); }"
     },
     {
       "name": "Campo de texto",
       "kind": "input",
       "refersTo": "field",
-      "description": "Campo del RSVP con etiqueta visible, borde verde al 60% y radio 2px.",
+      "description": "Campo del RSVP con etiqueta visible, borde de tinta al 60% y radio 2px.",
       "html": "<div class=\"ds-field\"><label for=\"ds-n\">Nombre completo</label><input id=\"ds-n\" type=\"text\"></div>",
-      "css": ".ds-field { display: grid; gap: 8px; width: 280px; font-family: 'Work Sans', system-ui, sans-serif; color: #1F3328; } .ds-field label { font-size: .9375rem; font-weight: 500; } .ds-field input { min-height: 52px; padding: 14px 16px; background: #F6F3EC; color: #1F3328; border: 1px solid rgba(31,51,40,.6); border-radius: 2px; font: inherit; transition: border-color .2s ease-out; } .ds-field input:focus-visible { outline: 2px solid #6E4F3D; outline-offset: 2px; border-color: #1F3328; }"
+      "css": ".ds-field { display: grid; gap: 8px; width: 280px; font-family: 'Work Sans', system-ui, sans-serif; color: #2E2326; } .ds-field label { font-size: .9375rem; font-weight: 500; } .ds-field input { min-height: 52px; padding: 14px 16px; background: #FFFDF8; color: #2E2326; border: 1px solid rgba(46,35,38,.6); border-radius: 2px; font: inherit; transition: border-color .2s ease-out; } .ds-field input:focus-visible { outline: 2px solid #7A4E22; outline-offset: 2px; border-color: #2E2326; }"
     },
     {
       "name": "Opción Sí / No",
       "kind": "chip",
       "refersTo": "choice-selected",
-      "description": "Bloque de elección del RSVP; el marcado se rellena de verde bosque.",
+      "description": "Bloque de elección del RSVP; la marcada se rellena de tinta de botón.",
       "html": "<div class=\"ds-choice\"><span class=\"ds-choice-on\">Sí, allí estaré</span><span>No podré ir</span></div>",
-      "css": ".ds-choice { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 320px; font-family: 'Work Sans', system-ui, sans-serif; } .ds-choice span { display: flex; align-items: center; justify-content: center; min-height: 56px; padding: 8px 12px; border: 1px solid rgba(31,51,40,.6); color: #1F3328; text-align: center; transition: background-color .2s ease-out, color .2s ease-out; } .ds-choice span:hover { background: #EDE7DA; } .ds-choice .ds-choice-on { background: #1F3328; color: #F6F3EC; border-color: #1F3328; }"
+      "css": ".ds-choice { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 320px; font-family: 'Work Sans', system-ui, sans-serif; color: #2E2326; } .ds-choice span { display: flex; align-items: center; justify-content: center; min-height: 56px; padding: 8px 12px; border: 1px solid rgba(46,35,38,.6); text-align: center; transition: background-color .2s ease-out, color .2s ease-out; } .ds-choice span:hover { background: #E4D8C6; } .ds-choice .ds-choice-on { background: #3A2A2E; color: #F7F3EC; border-color: #3A2A2E; }"
     },
     {
       "name": "Navegación",
       "kind": "nav",
-      "description": "Enlaces en mayúsculas con subrayado fino que crece desde la izquierda.",
+      "description": "Enlaces en mayúsculas con subrayado de bronce que crece desde la izquierda.",
       "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"true\">Inicio</a><a href=\"#\">Nuestra Historia</a><a href=\"#\">La Boda</a></nav>",
-      "css": ".ds-nav { display: flex; gap: 28px; font-family: 'Work Sans', system-ui, sans-serif; color: #1F3328; } .ds-nav a { position: relative; padding: 10px 0; font-size: .8125rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; text-decoration: none; color: inherit; } .ds-nav a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 4px; height: 1px; background: #1F3328; transform: scaleX(0); transform-origin: left; transition: transform .25s cubic-bezier(.22,.8,.3,1); } .ds-nav a:hover::after, .ds-nav a[aria-current='true']::after { transform: scaleX(1); } .ds-nav a:focus-visible { outline: 2px solid #6E4F3D; outline-offset: 3px; }"
+      "css": ".ds-nav { display: flex; gap: 36px; font-family: 'Work Sans', system-ui, sans-serif; color: #2E2326; } .ds-nav a { position: relative; padding: 10px 0; font-size: .8125rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; text-decoration: none; color: inherit; } .ds-nav a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 4px; height: 1px; background: #7A4E22; transform: scaleX(0); transform-origin: left; transition: transform .25s cubic-bezier(.22,.8,.3,1); } .ds-nav a:hover::after, .ds-nav a[aria-current='true']::after { transform: scaleX(1); } .ds-nav a:focus-visible { outline: 2px solid #7A4E22; outline-offset: 3px; }"
     },
     {
       "name": "Panel de información",
       "kind": "card",
       "refersTo": "panel",
-      "description": "Panel tonal cloud-deep, sin borde ni sombra, con filas separadas por filete plata.",
+      "description": "Panel tonal de la sección (aquí mantequilla), sin borde ni sombra, con filas separadas por filete de bronce.",
       "html": "<article class=\"ds-panel\"><h3>Transporte</h3><div class=\"ds-row\"><b>Taxi</b><span>Parada Diagonal–Pedralbes</span></div><div class=\"ds-row\"><b>Autobús lanzadera</b><span>Sale a las 13:15h</span></div></article>",
-      "css": ".ds-panel { width: 340px; padding: 44px; background: #EDE7DA; color: #1F3328; font-family: 'Work Sans', system-ui, sans-serif; } .ds-panel h3 { margin: 0 0 12px; font-family: 'Bodoni Moda', Didot, Georgia, serif; font-weight: 400; font-size: 2rem; line-height: 1.05; letter-spacing: -.015em; } .ds-row { padding: 18px 0; border-top: 1px solid #C3C3C0; } .ds-row:first-of-type { border-top: 0; padding-top: 6px; } .ds-row b { display: block; font-weight: 500; } .ds-row span { display: block; font-size: .9375rem; color: #46564C; }"
+      "css": ".ds-panel { width: 340px; padding: 44px; background: #FFF9E6; color: #2E2326; font-family: 'Work Sans', system-ui, sans-serif; } .ds-panel h3 { margin: 0 0 12px; font-family: 'Bodoni Moda', Didot, Georgia, serif; font-weight: 500; font-size: 2rem; line-height: 1.05; letter-spacing: -.01em; font-variation-settings: 'opsz' 40; } .ds-row { padding: 18px 0; border-top: 1px solid rgba(122,78,34,.32); } .ds-row:first-of-type { border-top: 0; padding-top: 6px; } .ds-row b { display: block; font-weight: 500; } .ds-row span { display: block; font-size: .9375rem; color: #5E4A47; }"
     },
     {
       "name": "Cuenta atrás",
       "kind": "custom",
-      "description": "Componente firma de la portada: marco plata de 1px, cifras Bodoni y barrido de brillo único.",
+      "description": "Componente firma del hero: vidrio claro, marco de bronce, cifras Bodoni y barrido de luz ámbar.",
       "html": "<div class=\"ds-count\"><div><span>412</span><i>Días</i></div><div><span>07</span><i>Horas</i></div><div><span>31</span><i>Minutos</i></div><div><span>09</span><i>Segundos</i></div></div>",
-      "css": ".ds-count { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); width: 420px; border: 1px solid #C3C3C0; overflow: hidden; color: #1F3328; text-align: center; font-variant-numeric: tabular-nums lining-nums; } .ds-count > div { position: relative; padding: 18px 6px 14px; } .ds-count > div + div::before { content: ''; position: absolute; left: 0; top: 18%; bottom: 18%; width: 1px; background: #C3C3C0; } .ds-count span { display: block; font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 3rem; line-height: 1; letter-spacing: -.02em; } .ds-count i { display: block; margin-top: 8px; font-family: 'Work Sans', system-ui, sans-serif; font-style: normal; font-size: .6875rem; letter-spacing: .04em; text-transform: uppercase; color: #4F5551; }"
+      "css": ".ds-count { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); width: 460px; border: 1px solid rgba(122,78,34,.6); background: rgba(247,243,236,.55); overflow: hidden; color: #2E2326; text-align: center; font-variant-numeric: tabular-nums lining-nums; } .ds-count > div { position: relative; padding: 18px 6px 14px; } .ds-count > div + div::before { content: ''; position: absolute; left: 0; top: 18%; bottom: 18%; width: 1px; background: rgba(122,78,34,.4); } .ds-count span { display: block; font-family: 'Bodoni Moda', Didot, Georgia, serif; font-weight: 500; font-variation-settings: 'opsz' 40; font-size: 3rem; line-height: 1; letter-spacing: -.02em; } .ds-count i { display: block; margin-top: 8px; font-family: 'Work Sans', system-ui, sans-serif; font-style: normal; font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; color: #5E4A47; } .ds-count::after { content: ''; position: absolute; top: 0; bottom: 0; left: 0; width: 38%; pointer-events: none; background: linear-gradient(100deg, rgba(232,170,80,0), rgba(232,170,80,.4) 50%, rgba(232,170,80,0)); transform: translateX(-130%); } .ds-count:hover::after { transform: translateX(340%); transition: transform .95s cubic-bezier(.22,.8,.3,1); }"
     },
     {
       "name": "Hito de historia",
       "kind": "custom",
-      "description": "Componente firma de Nuestra historia: año fantasma en cursiva, fecha champagne, título Bodoni, imagen en arco opcional.",
+      "description": "Componente firma de Nuestra historia sobre salvia: año fantasma en cursiva, fecha burdeos, título Bodoni, imagen en arco opcional.",
       "html": "<article class=\"ds-hito\"><div class=\"ds-hito-img\"></div><p class=\"ds-hito-date\">Julio 2022</p><h3>El tren sin plan</h3><p>Su primer viaje largo: un tren de madera por la sierra.</p></article>",
-      "css": ".ds-hito { position: relative; width: 320px; padding: 48px 24px; background: #1F3328; color: #F6F3EC; font-family: 'Work Sans', system-ui, sans-serif; overflow: hidden; } .ds-hito::before { content: '2022'; position: absolute; top: -.1em; left: 8px; font-family: 'Bodoni Moda', Didot, Georgia, serif; font-style: italic; font-size: 9rem; line-height: 1; letter-spacing: -.04em; color: rgba(227,210,190,.1); } .ds-hito > * { position: relative; } .ds-hito-img { width: 82%; aspect-ratio: 3 / 4; background: #46564C; border-radius: 999px 999px 0 0; } .ds-hito-date { margin: 24px 0 0; font-family: 'Bodoni Moda', Didot, Georgia, serif; font-style: italic; font-size: 2.25rem; line-height: 1; color: #E3D2BE; } .ds-hito h3 { margin: 14px 0 0; font-family: 'Bodoni Moda', Didot, Georgia, serif; font-weight: 400; font-size: 1.75rem; line-height: 1.05; } .ds-hito p:last-child { margin: 14px 0 0; color: #E3D2BE; max-width: 44ch; }"
+      "css": ".ds-hito { position: relative; width: 320px; padding: 48px 24px; background: #E4E9D9; color: #2E2326; font-family: 'Work Sans', system-ui, sans-serif; overflow: hidden; } .ds-hito::before { content: '2022'; position: absolute; top: -.1em; left: 8px; font-family: 'Bodoni Moda', Didot, Georgia, serif; font-style: italic; font-size: 9rem; line-height: 1; letter-spacing: -.04em; color: rgba(122,78,34,.13); } .ds-hito > * { position: relative; } .ds-hito-img { width: 82%; aspect-ratio: 3 / 4; background: #D7DFC9; border-radius: 999px 999px 0 0; } .ds-hito-date { margin: 24px 0 0; font-family: 'Bodoni Moda', Didot, Georgia, serif; font-style: italic; font-size: 2.25rem; line-height: 1; color: #7A3446; } .ds-hito h3 { margin: 14px 0 0; font-family: 'Bodoni Moda', Didot, Georgia, serif; font-weight: 500; font-size: 1.75rem; line-height: 1.05; font-variation-settings: 'opsz' 40; } .ds-hito p:last-child { margin: 14px 0 0; color: #5E4A47; max-width: 44ch; }"
+    },
+    {
+      "name": "Panel de la pedida",
+      "kind": "custom",
+      "refersTo": "hito-final-panel",
+      "description": "Ancla borgoña del último hito: fondo wine-panel, fecha en oro, texto claro.",
+      "html": "<article class=\"ds-pedida\"><p class=\"ds-pedida-date\">Septiembre 2025</p><h3>La pedida</h3><p>En un mirador sobre la ciudad, sin cámaras ni público.</p></article>",
+      "css": ".ds-pedida { width: 340px; padding: 56px 40px; background: #5A2E3A; color: #F7F3EC; font-family: 'Work Sans', system-ui, sans-serif; } .ds-pedida-date { margin: 0; font-family: 'Bodoni Moda', Didot, Georgia, serif; font-style: italic; font-size: 2.25rem; line-height: 1; color: #E8C48A; } .ds-pedida h3 { margin: 14px 0 0; font-family: 'Bodoni Moda', Didot, Georgia, serif; font-weight: 500; font-size: 1.75rem; line-height: 1.05; font-variation-settings: 'opsz' 40; } .ds-pedida p:last-child { margin: 14px 0 0; color: #F1DFCB; max-width: 44ch; }"
     }
   ],
   "narrative": {
-    "northStar": "El claustro en silencio",
-    "overview": "Una invitación que se comporta como una publicación editorial de lujo: lienzo cálido casi vacío, Bodoni enorme, mucho aire y un solo pasaje rico. El lienzo es Cloud Dancer; la masa oscura es verde bosque; el mocha aparece como panel cálido; la plata existe solo como filo fino. La forma recurrente es el arco de claustro, el único contorno de imagen que no es rectangular.\n\nLa contención es la norma y la riqueza es una excepción con dueño: Nuestra historia concentra la masa de verde bosque, los numerales gigantes en cursiva, las composiciones de imagen mixtas y su propia entrada animada. El resto de secciones se limita a tipografía, filetes finos y fondos tonales.\n\nRechaza la plantilla nupcial floral con caligrafía y dorados, y las cuadrículas de tarjetas con sombra. La profundidad se logra con cambio de fondo, no con sombras.",
+    "northStar": "La carpa a plena luz",
+    "overview": "La invitación es una carpa de telas blancas a mediodía: un lienzo Cloud Dancer luminoso, secciones que cambian de color de temporada (salvia, blush, mantequilla, latte) como cambia la luz entre pliegues de tela, y un solo destello cálido, el de las lámparas, que vive únicamente en las chispas titilantes del hero y en el barrido de luz de la cuenta atrás. La oscuridad se reserva para dos anclas de borgoña: el hito de la pedida y el pie.\n\nBodoni Moda en peso 500 con eje óptico limitado a unos 40 aporta elegancia sin perder grosor de trazo sobre fondos claros; Work Sans hace de voz práctica. La forma recurrente es el arco, que contornea las fotos de los lugares y el segundo hito. La profundidad se logra cambiando de fondo y con filetes de bronce al 32%, no con sombras de caja.\n\nRechaza el contraste dramático y el negro de la versión anterior, y la plantilla nupcial de caligrafía y florales.",
     "keyCharacteristics": [
-      "Lienzo Cloud Dancer con una variante tonal para alternar secciones.",
-      "Bodoni Moda en titulares y cifras, Work Sans en cuerpo y rótulos.",
-      "Esquinas rectas; el arco (cúpula superior) es la única silueta de imagen distinta.",
-      "Sin sombras de caja: capas tonales y filetes de 1px.",
-      "Iconos Phosphor light en línea, en grafito (plata sobre fondos oscuros).",
-      "Movimiento sobrio; el barrido plateado de la cuenta atrás y la entrada de Historia son los momentos indulgentes."
+      "Lienzo Cloud Dancer con fondos de sección rotativos en cinco tonos claros; el tema vive en variables CSS por sección.",
+      "Tinta espresso, burdeos para voz de acento y bronce para filetes, iconos y foco.",
+      "Borgoña profundo solo en anclas (panel de la pedida, pie).",
+      "Bodoni Moda 500 (opsz 40) en titulares, cifras y fechas en cursiva; Work Sans en cuerpo y rótulos.",
+      "Esquinas rectas; el arco es la única silueta de imagen distinta.",
+      "Sin sombras de caja; las chispas ámbar y el barrido de la cuenta atrás son la única luz."
     ],
     "rules": [
-      { "name": "The Silver Hairline Rule", "body": "La plata es filo, marco o icono. No rellena paneles ni forma degradados de superficie; los paneles se distinguen por relleno tonal, no por un borde plateado decorativo.", "section": "colors" },
-      { "name": "The One Mass Rule", "body": "El verde bosque como masa grande pertenece a Nuestra historia, al menú móvil y al pie; las demás secciones permanecen sobre cloud o cloud-deep.", "section": "colors" },
-      { "name": "The Contrast Pairing Rule", "body": "Texto de acento sobre cloud = mocha-deep, nunca mocha; texto secundario sobre verde = champagne, nunca plata.", "section": "colors" },
+      { "name": "The Season Swap Rule", "body": "El color de una sección es su tema completo (fondo, panel, línea, botón); se cambia la clase de tema, nunca un color suelto en un componente. Cloud y los tonos de temporada alternan sin repetir vecino.", "section": "colors" },
+      { "name": "The Wine Anchor Rule", "body": "El borgoña como masa pertenece solo al panel de la pedida y al pie. Cualquier otra sección permanece clara.", "section": "colors" },
+      { "name": "The Single Spark Rule", "body": "El ámbar solo se enciende en las chispas del hero y en el barrido de la cuenta atrás.", "section": "colors" },
+      { "name": "The Contrast Pairing Rule", "body": "Texto de acento sobre claro = burdeos o bronce, nunca ámbar ni oro; sobre borgoña = oro de borgoña.", "section": "colors" },
       { "name": "The Didone Scale Rule", "body": "Bodoni va grande o no va: nunca por debajo de 1.25rem. Todo lo pequeño es Work Sans.", "section": "typography" },
+      { "name": "The Capped Optical Rule", "body": "Bodoni se fija a peso 500 y opsz 36-48; no se deja subir al eje automático, que adelgaza los finos hasta perderlos sobre claro.", "section": "typography" },
       { "name": "The Lining Numerals Rule", "body": "Cifras de datos (cuenta atrás, teléfonos, IBAN, precios) con tabular-nums lining-nums.", "section": "typography" },
-      { "name": "The Tonal Depth Rule", "body": "Una superficie se eleva cambiando de fondo (cloud a cloud-deep, o a forest/mocha), nunca añadiendo sombra o borde decorativo.", "section": "elevation" }
+      { "name": "The Tonal Depth Rule", "body": "Una superficie se eleva cambiando de fondo o de panel, nunca añadiendo sombra de caja ni borde decorativo.", "section": "elevation" },
+      { "name": "The Warm Veil Rule", "body": "Sobre la foto del hero, el texto vive bajo un velo cloud (radial al 78% central y degradado vertical hasta el 96% abajo), no sobre la foto desnuda.", "section": "elevation" }
     ],
     "dos": [
-      "Do mantener el lienzo en cloud y alternar solo con cloud-deep; la masa verde se reserva para Historia, menú y pie.",
-      "Do usar el arco únicamente para la foto de portada y el segundo hito.",
-      "Do separar superficies por relleno tonal y filetes de 1px en plata.",
-      "Do usar mocha-deep para texto de acento sobre cloud y champagne para texto sobre verde.",
-      "Do usar iconos Phosphor light en línea con currentColor, en grafito (plata sobre oscuro).",
+      "Do dar a cada sección un tema completo mediante su clase (cloud, sage, blush, butter, latte) y alternar sin repetir vecino.",
+      "Do reservar el borgoña para el panel de la pedida y el pie, con oro de borgoña como acento sobre él.",
+      "Do usar el arco únicamente en fotos de los lugares y en el segundo hito.",
+      "Do separar superficies por relleno tonal y filetes de 1px en bronce al 32%.",
+      "Do componer Bodoni a peso 500 con opsz 36-48 y por encima de 1.25rem.",
       "Do mantener botones rectos, de 48px y en mayúsculas de 13px.",
-      "Do limitar el movimiento a fade y deslizamiento de 400ms, con la entrada de Historia como único pasaje elaborado; respetar prefers-reduced-motion."
+      "Do limitar el movimiento a fade y deslizamiento de unos 400ms, con la entrada de Historia como único pasaje elaborado; respetar prefers-reduced-motion."
     ],
     "donts": [
-      "Don't usar plata como relleno de panel, fondo o degradado de superficie.",
-      "Don't añadir sombras de caja, bordes decorativos plateados o esquinas redondeadas a paneles y botones.",
+      "Don't usar ámbar fuera de las chispas del hero y el barrido de la cuenta atrás.",
+      "Don't añadir sombras de caja, bordes decorativos ni esquinas redondeadas a paneles y botones.",
+      "Don't usar negro ni fondos oscuros fuera de las anclas borgoña.",
       "Don't introducir caligrafía, florales ni dorados de plantilla nupcial.",
-      "Don't usar Bodoni por debajo de 1.25rem ni Work Sans en titulares.",
-      "Don't repetir el tratamiento rico de Historia (años fantasma, clip-path, composiciones mixtas) en otras secciones.",
-      "Don't usar mocha (#8A6652) como color de texto sobre cloud."
+      "Don't usar bronce o burdeos como relleno de superficie, ni Work Sans en titulares.",
+      "Don't repetir el tratamiento de Historia (años fantasma, clip-path, composiciones mixtas) en otras secciones."
     ]
   }
 }

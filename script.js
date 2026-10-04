@@ -23,6 +23,19 @@
   var frame = $('#countdown');
   if (!reduce) setTimeout(function () { frame.classList.add('sweep'); }, 900);
 
+  /* ---------- Luces titilantes del hero (solo opacity/transform, en pausa fuera de pantalla) ---------- */
+  var sp = $('#sparks');
+  if (sp && !reduce) {
+    var N = window.innerWidth < 768 ? 22 : 40, seed = 7, rnd = function () { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
+    for (var i = 0; i < N; i++) {
+      var s = document.createElement('i'); s.className = 'spark';
+      var size = 2 + rnd() * 3.5;
+      s.style.cssText = 'left:' + (rnd() * 100).toFixed(1) + '%;top:' + (4 + rnd() * 62).toFixed(1) + '%;--s:' + size.toFixed(1) + 'px;--d:' + (1.8 + rnd() * 3.2).toFixed(2) + 's;--l:-' + (rnd() * 5).toFixed(2) + 's';
+      sp.appendChild(s);
+    }
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (en) { sp.classList.toggle('paused', !en[0].isIntersecting); }).observe($('#inicio'));
+  } else if (sp) { for (var k = 0; k < 18; k++) { var d = document.createElement('i'); d.className = 'spark'; d.style.cssText = 'left:' + (k * 5.7 % 100) + '%;top:' + (10 + k * 11 % 55) + '%;--s:3px;--d:1s;--l:0s'; sp.appendChild(d); } }
+
   /* ---------- Scroll más lento y suave (Lenis): rueda al 55%, táctil nativo ---------- */
   var lenis = null;
   if (!reduce && window.Lenis) {

@@ -5,14 +5,12 @@ primary_target: "index.html"
 related_targets: []
 ---
 
-Scope: Persuade (portfolio para wedding planners) con superficie de invitación. Landing única index.html.
-
-Audiencia/acción: agencias de bodas que deben creer que el autor domina la estética 2026/27; invitados que confirman asistencia.
+Scope: Persuade (portfolio para wedding planners) con superficie de invitación. Landing única index.html. REDISEÑO v2 por petición del usuario: la estética de los pins de Pinterest (carpa de boda al atardecer, telas translúcidas, lámparas de araña, luces, rosas blush y marfil) pero en una versión CLARA y luminosa, con fondos en colores de tendencia 2026-2027.
 
 ## Direction contract
-THESIS: lujo discreto editorial: casi todo es silencio (Cloud Dancer, mucho aire, Bodoni enorme) y la riqueza narrativa se concentra solo en Nuestra historia; rechaza la plantilla de boda floral con caligrafía y dorados.
-OWN-WORLD: lienzo #F6F3EC, verde bosque #1F3328 como masa narrativa, mocha #8A6652 como panel cálido, plata #C3C3C0 solo en filos finos, Bodoni Moda + Work Sans, arco de claustro como único contorno de imagen, iconos Phosphor light en grafito.
-STORY: el visitante entiende que es una boda de gusto 2027, ve fecha y cuenta atrás, recorre la historia, confirma asistencia sin fricción; el planner percibe oficio de agencia.
-FIRST VIEWPORT: izquierda nombres Valeria / & Hugo (≤6rem), fecha, frase, cuenta atrás con marco plateado; derecha foto en arco del patio con palmera a altura casi completa; header transparente con CTA Confirmar asistencia arriba a la derecha; en móvil la foto arriba y los nombres debajo.
-FORM: composición editorial dividida (pinned por el briefing); posición 1 de 1 (dirección fijada por el usuario, sin sorteo); seed key: pinned-brief.
+THESIS: la invitación es la carpa de telas blancas a plena luz, con el brillo cálido de las lámparas como único destello; fondos suaves en colores de temporada en lugar de oscuridad; rechaza el negro y el contraste dramático de la versión anterior.
+OWN-WORLD: Cloud Dancer #F7F3EC (Pantone 2026) como lienzo; salvia #E4E9D9, blush #F3DFD6, mantequilla #F8EFCF y mocha-latte #E9DCCB como fondos de sección; tinta espresso #2E2326, burdeos #7A3446 y bronce #7A4E22 como acentos; borgoña #4A2530/#5A2E3A solo en anclas (panel de la pedida, pie); Bodoni Moda 500 + Work Sans; arco como contorno de imagen; luces titilantes ámbar.
+STORY: el visitante entra en una carpa luminosa, ve fecha y cuenta atrás, recorre la historia sobre salvia, y confirma asistencia sobre mocha claro, todo legible y ligero.
+FIRST VIEWPORT: foto a pantalla completa de carpa con telas blancas y lámparas de araña sobre césped, velo claro cálido, nombres Valeria & Hugo centrados en tinta espresso con & burdeos, fecha burdeos en cursiva, cuenta atrás con marco bronce sobre vidrio claro, luces titilantes, header transparente con CTA espresso; cabe exacto en 100svh en móvil.
+FORM: composición centrada a pantalla completa en el hero y alternancia de fondos claros de temporada por sección (dirección fijada por el usuario, sin sorteo); seed key: pinned-brief-pinterest-light.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
